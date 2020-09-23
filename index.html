@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Vlad Kruglenia</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+<div class="app-wrapper">
+    <div class="header">
+        <div class="headerContainer">
+            <div class="titleHeader">Social network</div>
+            <div class="loginBlock">
+                <div>vladkruglenya</div>
+            </div>
+        </div>
+    </div>
+    <div class="app-wrapper-content">
+        <div class="app-wrapper-container">
+            <div class="app-content">
+                <div class="profileInfoContainer">
+                    <div class="imgContainer">
+                        <img src="loginIMG.jpg" alt="" class="logo"/>
+                    </div>
+                    <div class="descriptionBlock">
+                        <div class="profileStatusContainer">
+                            <div>
+                                <h2>vlad kruglenia</h2>
+                            </div>
+                            <div class="status">
+                                {props.status || "Нет статуса, сори"}
+                            </div>
+                        </div>
+                        <div class="contactsDataContainer">
+                            <div class="contact">
+                                <div><b>Looking for a job: </b></div>
+                                <div>
+                                    {props.profile.lookingForAJob
+                                    ? "yes"
+                                    : "no"}
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div><b>My skills: </b></div>
+                                <div>
+                                    {props.profile.lookingForAJobDescription}
+                                </div>
+                            </div>
+                            <div>
+                                <b>My contacts: </b><br/>
+                                <div class="contact">
+                                    <div>{props.contactName}:</div>
+                                    <div>{props.contactValue}</div>
+                                </div>
+                                <div class="contact">
+                                    <div>{props.contactName}:</div>
+                                    <div>{props.contactValue}</div>
+                                </div>
+                                <div class="contact">
+                                    <div>{props.contactName}:</div>
+                                    <div>{props.contactValue}</div>
+                                </div>
+                                <div class="contact">
+                                    <div>{props.contactName}:</div>
+                                    <div>{props.contactValue}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

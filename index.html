@@ -22,50 +22,56 @@
                     <div class="imgContainer">
                         <img src="loginIMG.jpg" alt="" class="logo"/>
                     </div>
-                    <div class="descriptionBlock">
-                        <div class="profileStatusContainer">
-                            <div>
-                                <h2>vlad kruglenia</h2>
+                    <div class="descriptionBlockContainer">
+                        <div class="descriptionBlock">
+                            <div class="profileStatusContainer">
+                                <div>
+                                    <h2>Кругленя Владислав</h2>
+                                </div>
+                                <div class="status">
+                                    Изменить статус
+                                </div>
                             </div>
-                            <div class="status">
-                                {props.status || "Нет статуса, сори"}
+                            <div class="contactsDataContainer">
+                                <div class="contact">
+                                    <div><b>Мои навыки: </b></div>
+                                    <div>
+                                        js, html, css, react, redux
+                                    </div>
+                                </div>
+                                <div class="contact">
+                                    <div><b>Обо мне: </b></div>
+                                    <div>
+                                        Мне 21 год. Образование высшее не окончено.
+                                        Последние полгода изучаю frontend(React+Redux).
+                                        Приложение по ссылке ниже написано при помощи данных технологий.
+                                        Ваш курс Frontend «JS Camping» интересен тем, что он позволит
+                                        расширить свои знания и навыки в интересующей меня сфере, завести полезные
+                                        знакомства и найти работу.
+                                    </div>
+                                </div>
+                                <div>
+                                    <b>Мои контакты: </b><br/>
+                                    <div class="contact">
+                                        <div>vk:</div>
+                                        <div>https://vk.com/vlad_kruglenia</div>
+                                    </div>
+                                    <div class="contact">
+                                        <div>github:</div>
+                                        <div>https://github.com/vladislav-kruglenia</div>
+                                    </div>
+                                    <div class="contact">
+                                        <div>telegram:</div>
+                                        <div>@barbarishnykob</div>
+                                    </div>
+                                    <div class="contact">
+                                        <div>Номер телефона:</div>
+                                        <div>+375 29 381-75-00</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="contactsDataContainer">
-                            <div class="contact">
-                                <div><b>Looking for a job: </b></div>
-                                <div>
-                                    {props.profile.lookingForAJob
-                                    ? "yes"
-                                    : "no"}
-                                </div>
-                            </div>
-                            <div class="contact">
-                                <div><b>My skills: </b></div>
-                                <div>
-                                    {props.profile.lookingForAJobDescription}
-                                </div>
-                            </div>
-                            <div>
-                                <b>My contacts: </b><br/>
-                                <div class="contact">
-                                    <div>{props.contactName}:</div>
-                                    <div>{props.contactValue}</div>
-                                </div>
-                                <div class="contact">
-                                    <div>{props.contactName}:</div>
-                                    <div>{props.contactValue}</div>
-                                </div>
-                                <div class="contact">
-                                    <div>{props.contactName}:</div>
-                                    <div>{props.contactValue}</div>
-                                </div>
-                                <div class="contact">
-                                    <div>{props.contactName}:</div>
-                                    <div>{props.contactValue}</div>
-                                </div>
-                            </div>
-                        </div>
+                        <a href="https://vladislav-kruglenia.github.io/demo-react-app/" target="_blank">Полная версия сайта</a>
                     </div>
                 </div>
             </div>
